@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "简历管理" [level=1] [ref=e7]
+        - paragraph [ref=e8]: 管理你的所有简历，随时编辑和导出
+      - generic [ref=e9]:
+        - button "搜索" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+          - text: 搜索
+        - button "新建简历" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+          - text: 新建简历
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - button "新建简历" [ref=e19] [cursor=pointer]:
+        - img [ref=e21]
+        - generic [ref=e22]: 新建简历
+      - generic [ref=e23] [cursor=pointer]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: 陈志远
+          - generic [ref=e28]: 高级前端工程师
+        - generic [ref=e29]:
+          - heading "前端工程师简历" [level=3] [ref=e31]
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - text: 7 分钟前
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - text: 6 条经历
+          - generic [ref=e41]:
+            - button "重命名" [ref=e42]:
+              - img [ref=e43]
+            - button "复制" [ref=e46]:
+              - img [ref=e47]
+            - button "删除" [ref=e50]:
+              - img [ref=e51]
+  - dialog [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - img [ref=e56]
+        - textbox "搜索简历名称、姓名、公司、技能..." [active] [ref=e59]: 字节
+        - button [ref=e97] [cursor=pointer]:
+          - img [ref=e98]
+      - list [ref=e101]:
+        - listitem [ref=e102] [cursor=pointer]:
+          - generic [ref=e103]:
+            - img [ref=e105]
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - generic [ref=e110]: 前端工程师简历
+                - generic [ref=e111]: 7 分钟前
+              - generic [ref=e112]: 陈志远 · 高级前端工程师
+              - generic [ref=e114]:
+                - generic [ref=e115]: 公司
+                - generic [ref=e116]:
+                  - mark [ref=e117]: 字节
+                  - text: 跳动
+      - generic [ref=e118]: 找到 1 条结果
+    - button "close" [ref=e64] [cursor=pointer]

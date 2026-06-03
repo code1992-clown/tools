@@ -1,0 +1,21 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "简历管理" [level=1] [ref=e7]
+        - paragraph [ref=e8]: 管理你的所有简历，随时编辑和导出
+      - generic [ref=e9]:
+        - button "搜索" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+          - text: 搜索
+        - button "新建简历" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+          - text: 新建简历
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - img [ref=e19]
+      - heading "还没有简历" [level=2] [ref=e22]
+      - paragraph [ref=e23]: 点击下方按钮创建你的第一份简历
+      - button "创建第一份简历" [ref=e24] [cursor=pointer]:
+        - img [ref=e25]
+        - text: 创建第一份简历

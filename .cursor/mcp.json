@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+        "mcp-feedback-enhanced": {
+            "command": "uvx",
+            "args": [
+                "git+https://github.com/bitxel/mcp-feedback-enhanced.git@bump_starlette"
+            ],
+            "timeout": 600,
+            "autoApprove": [
+                "interactive_feedback"
+            ]
+        },
+        "playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ]
+        }
+    }
+}

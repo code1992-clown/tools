@@ -1,0 +1,38 @@
+- generic [ref=e583]:
+  - banner [ref=e584]:
+    - generic [ref=e585]:
+      - generic [ref=e586]:
+        - heading "简历管理" [level=1] [ref=e587]
+        - paragraph [ref=e588]: 管理你的所有简历，随时编辑和导出
+      - generic [ref=e589]:
+        - button "搜索" [ref=e590] [cursor=pointer]:
+          - img [ref=e591]
+          - text: 搜索
+        - button "新建简历" [ref=e594] [cursor=pointer]:
+          - img [ref=e595]
+          - text: 新建简历
+  - main [ref=e596]:
+    - generic [ref=e597]:
+      - button "新建简历" [ref=e598] [cursor=pointer]:
+        - img [ref=e600]
+        - generic [ref=e601]: 新建简历
+      - generic [ref=e602] [cursor=pointer]:
+        - generic [ref=e605]:
+          - generic [ref=e606]: 陈志远
+          - generic [ref=e607]: 高级前端工程师
+        - generic [ref=e608]:
+          - heading "前端工程师简历" [level=3] [ref=e610]
+          - generic [ref=e611]:
+            - generic [ref=e612]:
+              - img [ref=e613]
+              - text: 2 分钟前
+            - generic [ref=e616]:
+              - img [ref=e617]
+              - text: 6 条经历
+          - generic [ref=e620]:
+            - button "重命名" [ref=e621]:
+              - img [ref=e622]
+            - button "复制" [ref=e625]:
+              - img [ref=e626]
+            - button "删除" [ref=e629]:
+              - img [ref=e630]

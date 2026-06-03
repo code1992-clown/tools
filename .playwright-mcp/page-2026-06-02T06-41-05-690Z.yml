@@ -1,0 +1,74 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "简历管理" [level=1] [ref=e7]
+        - paragraph [ref=e8]: 管理你的所有简历，随时编辑和导出
+      - generic [ref=e9]:
+        - button "搜索" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+          - text: 搜索
+        - button "新建简历" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+          - text: 新建简历
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - button "新建简历" [ref=e19] [cursor=pointer]:
+        - img [ref=e21]
+        - generic [ref=e22]: 新建简历
+      - generic [ref=e23] [cursor=pointer]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: 陈志远
+          - generic [ref=e28]: 高级前端工程师
+        - generic [ref=e29]:
+          - heading "前端工程师简历" [level=3] [ref=e31]
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - text: 7 分钟前
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - text: 6 条经历
+          - generic [ref=e41]:
+            - button "重命名" [ref=e42]:
+              - img [ref=e43]
+            - button "复制" [ref=e46]:
+              - img [ref=e47]
+            - button "删除" [ref=e50]:
+              - img [ref=e51]
+  - dialog [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - img [ref=e56]
+        - textbox "搜索简历名称、姓名、公司、技能..." [active] [ref=e59]: 前端
+        - button [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+      - list [ref=e69]:
+        - listitem [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]:
+            - img [ref=e73]
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - generic [ref=e78]: 前端工程师简历
+                - generic [ref=e79]: 7 分钟前
+              - generic [ref=e80]: 陈志远 · 高级前端工程师
+              - generic [ref=e81]:
+                - generic [ref=e82]:
+                  - generic [ref=e83]: 简历名称
+                  - generic [ref=e84]:
+                    - mark [ref=e85]: 前端
+                    - text: 工程师简历
+                - generic [ref=e86]:
+                  - generic [ref=e87]: 职位
+                  - generic [ref=e88]:
+                    - text: 高级
+                    - mark [ref=e89]: 前端
+                    - text: 工程师
+                - generic [ref=e90]:
+                  - generic [ref=e91]: 职位
+                  - generic [ref=e92]:
+                    - text: 高级
+                    - mark [ref=e93]: 前端
+                    - text: 工程师
+      - generic [ref=e94]: 找到 1 条结果
+    - button "close" [ref=e64] [cursor=pointer]

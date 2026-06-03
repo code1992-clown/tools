@@ -1,0 +1,515 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "resume-light";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f8f9fa;
+  --color-base-300: #e5e7eb;
+  --color-base-content: #111827;
+
+  --color-primary: #2563eb;
+  --color-primary-content: #ffffff;
+  --color-secondary: #1e293b;
+  --color-secondary-content: #ffffff;
+  --color-accent: #3b82f6;
+  --color-accent-content: #ffffff;
+  --color-neutral: #111827;
+  --color-neutral-content: #f9fafb;
+
+  --color-info: #3b82f6;
+  --color-info-content: #ffffff;
+  --color-success: #10b981;
+  --color-success-content: #ffffff;
+  --color-warning: #f59e0b;
+  --color-warning-content: #111827;
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "resume-night";
+  color-scheme: dark;
+
+  --color-base-100: #1a1b2e;
+  --color-base-200: #13141f;
+  --color-base-300: #2a2b3d;
+  --color-base-content: #e2e4f0;
+
+  --color-primary: #3b82f6;
+  --color-primary-content: #ffffff;
+  --color-secondary: #334155;
+  --color-secondary-content: #e2e8f0;
+  --color-accent: #60a5fa;
+  --color-accent-content: #111827;
+  --color-neutral: #1e1f33;
+  --color-neutral-content: #e2e4f0;
+
+  --color-info: #60a5fa;
+  --color-info-content: #111827;
+  --color-success: #34d399;
+  --color-success-content: #111827;
+  --color-warning: #fbbf24;
+  --color-warning-content: #111827;
+  --color-error: #f87171;
+  --color-error-content: #111827;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "resume-custom";
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f8f9fa;
+  --color-base-300: #e5e7eb;
+  --color-base-content: #111827;
+
+  --color-primary: #2563eb;
+  --color-primary-content: #ffffff;
+  --color-secondary: #1e293b;
+  --color-secondary-content: #ffffff;
+  --color-accent: #3b82f6;
+  --color-accent-content: #ffffff;
+  --color-neutral: #111827;
+  --color-neutral-content: #f9fafb;
+
+  --color-info: #3b82f6;
+  --color-info-content: #ffffff;
+  --color-success: #10b981;
+  --color-success-content: #ffffff;
+  --color-warning: #f59e0b;
+  --color-warning-content: #111827;
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@layer base {
+  :root {
+    --color-accent: #2563eb;
+    --color-accent-light: #93c5fd;
+    --gradient-start: #f9fafb;
+    --gradient-end: #ffffff;
+  }
+
+  body {
+    @apply min-h-screen antialiased bg-base-200 text-base-content;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(37, 99, 235, 0.15) transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(37, 99, 235, 0.12);
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(37, 99, 235, 0.25);
+  }
+}
+
+/* ===== Custom Template CSS Variables ===== */
+.custom-template .print-area {
+  color: var(--tmpl-text, inherit);
+  background-color: var(--tmpl-bg, #ffffff);
+  font-family: var(--tmpl-body-font, system-ui, sans-serif);
+  font-size: var(--tmpl-body-size, 14px);
+  padding: var(--tmpl-page-padding, 32px);
+}
+.custom-template .print-area h1 {
+  font-family: var(--tmpl-heading-font, system-ui, sans-serif);
+  font-size: var(--tmpl-name-size, 30px);
+}
+.custom-template .print-area h2 {
+  font-size: var(--tmpl-section-title-size, 11px);
+  color: var(--tmpl-accent, currentColor);
+}
+.custom-template .print-area .resume-section {
+  margin-bottom: var(--tmpl-section-gap, 24px);
+}
+.custom-template .print-area header {
+  border-color: var(--tmpl-accent, currentColor);
+}
+.custom-template .print-area header[class*="bg-blue"] {
+  background-color: var(--tmpl-header-bg, #2563eb) !important;
+  color: var(--tmpl-header-text, #ffffff);
+}
+.custom-template .print-area [class*="bg-blue-600"] {
+  background-color: var(--tmpl-accent, #2563eb);
+}
+.custom-template .print-area [class*="text-blue-600"],
+.custom-template .print-area [class*="text-blue-200"] {
+  color: var(--tmpl-accent, #2563eb);
+}
+.custom-template .print-area [class*="border-blue-200"],
+.custom-template .print-area [class*="border-blue-100"] {
+  border-color: color-mix(in srgb, var(--tmpl-accent, #2563eb), transparent 70%);
+}
+.custom-template .print-area [class*="text-emerald"] {
+  color: var(--tmpl-accent, #059669);
+}
+.custom-template .print-area [class*="bg-emerald"] {
+  background-color: var(--tmpl-accent, #059669);
+}
+.custom-template .print-area .text-gray-400,
+.custom-template .print-area .text-gray-500,
+.custom-template .print-area .text-gray-300 {
+  color: var(--tmpl-subtext, #9ca3af);
+}
+
+/* ===== WYSIWYG Editor Styles ===== */
+
+.contact-handle {
+  @apply opacity-40 hover:opacity-100 transition-all duration-200;
+}
+.contact-handle:hover {
+  @apply text-blue-500;
+}
+
+.section-handle {
+  display: none;
+  @apply cursor-grab active:cursor-grabbing text-gray-400 p-1 rounded;
+}
+.group\/section:hover .section-handle,
+.resume-section:hover > div > .section-handle {
+  display: inline-flex;
+  @apply text-gray-400;
+}
+.section-handle:hover {
+  @apply text-blue-600!;
+}
+.drag-ghost .section-handle,
+.drag-chosen .section-handle {
+  display: none !important;
+}
+
+.section-add-btn {
+  @apply btn btn-ghost btn-xs btn-square opacity-0 transition-all duration-200 pointer-events-none;
+}
+.group\/section:hover .section-add-btn,
+.resume-section:hover > div > .section-add-btn {
+  @apply opacity-40 pointer-events-auto;
+}
+.section-add-btn:hover {
+  @apply opacity-100 text-primary;
+}
+
+.section-remove-btn {
+  @apply btn btn-ghost btn-xs btn-square opacity-0 transition-all duration-200 pointer-events-none;
+}
+.group\/section:hover .section-remove-btn,
+.resume-section:hover > div > .section-remove-btn {
+  @apply opacity-25 pointer-events-auto;
+}
+.section-remove-btn:hover {
+  @apply opacity-100 text-error;
+}
+
+.item-wrapper {
+  @apply flex items-start gap-0 relative;
+}
+
+.move-btn {
+  display: none;
+  @apply text-gray-400 rounded p-0.5 cursor-pointer;
+}
+.move-btn:disabled {
+  @apply text-gray-200 cursor-not-allowed;
+}
+.move-btn:not(:disabled):hover {
+  @apply text-blue-600;
+}
+.group\/section:hover > div > .move-btn,
+.resume-section:hover > div > .move-btn,
+.group\/item:hover .move-btn,
+.item-wrapper:hover .move-btn {
+  display: inline-flex;
+}
+.drag-ghost .move-btn,
+.drag-chosen .move-btn {
+  display: none !important;
+}
+
+.item-handle {
+  display: none;
+  @apply cursor-grab active:cursor-grabbing text-gray-400 rounded ml-1;
+}
+.group\/item:hover .item-handle,
+.item-wrapper:hover .item-handle {
+  display: inline-flex;
+  @apply text-gray-400;
+}
+.item-handle:hover {
+  @apply text-blue-600!;
+}
+.drag-ghost .item-handle,
+.drag-chosen .item-handle {
+  display: none !important;
+}
+
+.item-delete-btn {
+  @apply btn btn-ghost btn-xs btn-circle absolute -right-6 top-0.5 opacity-0 min-h-0 h-5 w-5
+         text-base-content/25 hover:text-error hover:bg-error/10 transition-all duration-200 z-10 pointer-events-none;
+}
+.group\/item:hover > .item-delete-btn,
+.item-wrapper:hover > .item-delete-btn {
+  @apply opacity-60 pointer-events-auto;
+}
+.item-delete-btn:hover {
+  @apply opacity-100;
+}
+
+.item-delete-btn-inline {
+  @apply btn btn-ghost btn-xs opacity-0 text-error/60 hover:text-error min-h-0 h-auto p-0 ml-0.5 transition-all duration-200 pointer-events-none;
+}
+.group\/item:hover > .item-delete-btn-inline,
+.group\/item:hover .item-delete-btn-inline {
+  @apply opacity-60 pointer-events-auto;
+}
+
+.empty-add-btn {
+  @apply btn btn-outline btn-block btn-sm border-dashed border-base-300 text-base-content/40
+         hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-all duration-200
+         opacity-0 pointer-events-none;
+}
+.group\/section:hover .empty-add-btn,
+.resume-section:hover .empty-add-btn {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.drag-ghost {
+  @apply opacity-20;
+}
+.drag-chosen {
+  @apply ring-2 ring-blue-300/60 ring-offset-2 rounded-lg;
+}
+
+@keyframes moveFlash {
+  0% { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.35); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+.move-flash {
+  animation: moveFlash 0.5s ease-out;
+  border-radius: 8px;
+}
+
+.resume-section {
+  @apply rounded-lg transition-all duration-200 border border-transparent;
+  padding: 8px;
+  margin: -8px;
+  margin-bottom: 1.5rem;
+}
+.resume-section:hover {
+  @apply border-indigo-200/60 bg-indigo-50/10;
+}
+
+.resume-section .item-wrapper,
+.resume-section .group\/item {
+  @apply rounded-lg transition-all duration-150 border border-transparent;
+  padding: 6px;
+  margin: -6px;
+  margin-bottom: 0.5rem;
+}
+.resume-section .item-wrapper:hover,
+.resume-section .group\/item:hover {
+  @apply border-amber-200/60 bg-amber-50/15;
+}
+
+.print-area .resume-section input,
+.print-area .resume-section textarea {
+  cursor: default;
+  caret-color: transparent;
+}
+.print-area .resume-section:hover input,
+.print-area .resume-section:hover textarea,
+.print-area .resume-section input:focus,
+.print-area .resume-section textarea:focus {
+  cursor: text;
+  caret-color: auto;
+}
+.print-area > header input,
+.print-area > header textarea {
+  cursor: default;
+  caret-color: transparent;
+}
+.print-area > header:hover input,
+.print-area > header:hover textarea,
+.print-area > header input:focus,
+.print-area > header textarea:focus {
+  cursor: text;
+  caret-color: auto;
+}
+
+.print-area .no-print {
+  pointer-events: none;
+}
+.print-area .modal.no-print,
+.print-area .modal.no-print * {
+  pointer-events: auto;
+}
+.print-area .group\/section:hover .no-print,
+.print-area .resume-section:hover .no-print,
+.print-area .group\/header:hover .no-print,
+.print-area .group\/item:hover .no-print,
+.print-area .item-wrapper:hover .no-print,
+.print-area > header:hover .no-print {
+  pointer-events: auto;
+}
+
+.print-only {
+  @apply hidden;
+}
+
+/* ===== Preview Mode ===== */
+.preview-mode .no-print,
+.preview-mode .empty-add-btn,
+.preview-mode .section-handle,
+.preview-mode .section-add-btn,
+.preview-mode .section-remove-btn,
+.preview-mode .item-handle,
+.preview-mode .item-delete-btn,
+.preview-mode .item-delete-btn-inline {
+  display: none !important;
+}
+.preview-mode .resume-section {
+  border-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+.preview-mode .resume-section:hover {
+  border-color: transparent !important;
+  background: none !important;
+}
+.preview-mode .print-only {
+  display: inline !important;
+}
+.preview-mode .print-area {
+  pointer-events: none;
+}
+.preview-mode .edf::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+.preview-mode .edf {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.25s ease-out;
+}
+
+/* ===== Print Styles ===== */
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: inline !important;
+  }
+
+  .print-hide-empty {
+    display: none !important;
+  }
+
+  .print-area {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .print-area > :not(header):not(.flex):not(.modern-sidebar) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .modern-sidebar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-area header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume-section {
+    padding: 0 !important;
+    margin: 0 0 1.5rem 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .item-wrapper {
+    position: static;
+  }
+
+  .section-handle,
+  .section-add-btn,
+  .section-remove-btn,
+  .item-handle,
+  .item-delete-btn,
+  .item-delete-btn-inline,
+  .empty-add-btn {
+    display: none !important;
+  }
+}

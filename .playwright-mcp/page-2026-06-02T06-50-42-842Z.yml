@@ -1,0 +1,344 @@
+- generic [ref=e52]:
+  - navigation [ref=e53]:
+    - generic [ref=e54]:
+      - button "返回看板" [ref=e55] [cursor=pointer]:
+        - img [ref=e56]
+      - textbox [ref=e58]: 前端工程师简历
+    - button "经典" [ref=e60] [cursor=pointer]:
+      - text: 经典
+      - img [ref=e61]
+    - generic [ref=e63]:
+      - button "保存" [disabled]:
+        - img
+        - text: 保存
+      - button "预览" [ref=e65] [cursor=pointer]:
+        - img [ref=e66]
+        - text: 预览
+      - button "打印" [ref=e69] [cursor=pointer]:
+        - img [ref=e70]
+        - text: 打印
+      - button "导入" [ref=e75] [cursor=pointer]:
+        - img [ref=e76]
+        - text: 导入
+      - button "导出" [ref=e79] [cursor=pointer]:
+        - img [ref=e80]
+        - text: 导出
+      - button "重置" [ref=e83] [cursor=pointer]:
+        - img [ref=e84]
+        - text: 重置
+  - main [ref=e89]:
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - button "设计个人信息布局" [ref=e93] [cursor=pointer]:
+          - img [ref=e94]
+        - generic [ref=e99]:
+          - button [active] [ref=e101]:
+            - img [ref=e102]
+          - generic [ref=e105]:
+            - heading "陈志远" [level=1] [ref=e106]:
+              - textbox "你的姓名" [ref=e107]: 陈志远
+            - textbox "职位 / 头衔" [ref=e109]: 高级前端工程师
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - img [ref=e113]
+            - textbox "邮箱" [ref=e116]: zhiyuan.chen@email.com
+            - button "删除字段" [ref=e117]:
+              - img [ref=e118]
+          - generic [ref=e121]:
+            - img [ref=e123]
+            - textbox "电话" [ref=e125]: 138-0000-1234
+            - button "删除字段" [ref=e126]:
+              - img [ref=e127]
+          - generic [ref=e130]:
+            - img [ref=e132]
+            - textbox "城市" [ref=e135]: 上海
+            - button "删除字段" [ref=e136]:
+              - img [ref=e137]
+          - generic [ref=e140]:
+            - img [ref=e142]
+            - textbox "GitHub" [ref=e145]: github.com/zhiyuanchen
+            - button "删除字段" [ref=e146]:
+              - img [ref=e147]
+        - button "管理联系信息" [ref=e150]:
+          - img [ref=e151]
+          - text: 管理联系信息
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - button "拖拽排序" [ref=e155]:
+              - img [ref=e156]
+            - heading "工作经历" [level=2] [ref=e163]:
+              - textbox "板块名称" [ref=e164]: 工作经历
+            - button "设计板块布局" [ref=e165] [cursor=pointer]:
+              - img [ref=e166]
+            - button "添加" [ref=e171] [cursor=pointer]:
+              - img [ref=e172]
+            - button "移除板块" [ref=e173] [cursor=pointer]:
+              - img [ref=e174]
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - button [ref=e179]:
+                - img [ref=e180]
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - textbox "公司名称" [ref=e190]: 字节跳动
+                  - generic [ref=e191]:
+                    - textbox [ref=e193] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2022-03-01
+                    - generic [ref=e194]: —
+                    - generic [ref=e195]:
+                      - textbox [ref=e196] [cursor=pointer]:
+                        - /placeholder: 至今
+                      - generic [ref=e197] [cursor=pointer]: 至今
+                - textbox "职位" [ref=e199]: 高级前端工程师
+                - list [ref=e204]:
+                  - listitem [ref=e205]:
+                    - paragraph [ref=e206]: 负责抖音电商中台核心模块开发，使用 Vue 3 + TypeScript 构建高性能管理系统
+                  - listitem [ref=e207]:
+                    - paragraph [ref=e208]: 主导前端工程化改造，引入 Monorepo 架构，搭建组件库和脚手架，提升团队研发效率 40%
+                  - listitem [ref=e209]:
+                    - paragraph [ref=e210]: 优化首屏加载性能，通过代码拆分、懒加载和 SSR 方案将 LCP 从 3.2s 降至 1.1s
+                  - listitem [ref=e211]:
+                    - paragraph [ref=e212]: 设计并实现低代码可视化搭建平台，支撑运营团队自助生成活动页面
+              - button "×" [ref=e213] [cursor=pointer]
+            - generic [ref=e214]:
+              - button [ref=e215]:
+                - img [ref=e216]
+              - generic [ref=e223]:
+                - generic [ref=e224]:
+                  - textbox "公司名称" [ref=e226]: 蚂蚁集团
+                  - generic [ref=e227]:
+                    - textbox [ref=e229] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2019-07-01
+                    - generic [ref=e230]: —
+                    - textbox [ref=e232] [cursor=pointer]:
+                      - /placeholder: 至今
+                      - text: 2022-02-28
+                - textbox "职位" [ref=e234]: 前端工程师
+                - list [ref=e239]:
+                  - listitem [ref=e240]:
+                    - paragraph [ref=e241]: 参与支付宝小程序框架底层建设，优化渲染引擎使页面渲染速度提升 60%
+                  - listitem [ref=e242]:
+                    - paragraph [ref=e243]: 开发基于 React 的 B 端中后台系统，独立完成权限管理、数据看板等核心模块
+                  - listitem [ref=e244]:
+                    - paragraph [ref=e245]: 推动团队从 JavaScript 迁移至 TypeScript，编写迁移指南和 ESLint 规则集
+              - button "×" [ref=e246] [cursor=pointer]
+            - generic [ref=e247]:
+              - button [ref=e248]:
+                - img [ref=e249]
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - textbox "公司名称" [ref=e259]: 网易
+                  - generic [ref=e260]:
+                    - textbox [ref=e262] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2017-06-01
+                    - generic [ref=e263]: —
+                    - textbox [ref=e265] [cursor=pointer]:
+                      - /placeholder: 至今
+                      - text: 2019-06-30
+                - textbox "职位" [ref=e267]: 初级前端工程师
+                - list [ref=e272]:
+                  - listitem [ref=e273]:
+                    - paragraph [ref=e274]: 负责网易云音乐 Web 端播放器模块开发和维护
+                  - listitem [ref=e275]:
+                    - paragraph [ref=e276]: 使用 Canvas/WebGL 实现音频可视化效果，日活跃用户 200w+
+                  - listitem [ref=e277]:
+                    - paragraph [ref=e278]: 参与前端监控 SDK 开发，覆盖错误捕获、性能指标采集和用户行为追踪
+              - button "×" [ref=e279] [cursor=pointer]
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - button "拖拽排序" [ref=e282]:
+              - img [ref=e283]
+            - heading "项目经历" [level=2] [ref=e290]:
+              - textbox "板块名称" [ref=e291]: 项目经历
+            - button "设计板块布局" [ref=e292] [cursor=pointer]:
+              - img [ref=e293]
+            - button "添加" [ref=e298] [cursor=pointer]:
+              - img [ref=e299]
+            - button "移除板块" [ref=e300] [cursor=pointer]:
+              - img [ref=e301]
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - button [ref=e306]:
+                - img [ref=e307]
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - textbox "项目名称" [ref=e317]: 低代码可视化搭建平台
+                  - generic [ref=e318]:
+                    - textbox [ref=e320] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2023-01-01
+                    - generic [ref=e321]: —
+                    - textbox [ref=e323] [cursor=pointer]:
+                      - /placeholder: 至今
+                      - text: 2023-08-01
+                - textbox "担任角色" [ref=e325]: 技术负责人
+                - list [ref=e330]:
+                  - listitem [ref=e331]:
+                    - paragraph [ref=e332]: 从零设计并实现一套支持拖拽式页面搭建的低代码平台，覆盖 50+ 业务组件
+                  - listitem [ref=e333]:
+                    - paragraph [ref=e334]: 基于 JSON Schema 设计组件描述协议，实现属性面板自动生成和实时预览
+                  - listitem [ref=e335]:
+                    - paragraph [ref=e336]: 集成发布流水线，支持一键生成 H5/小程序/PC 三端页面，累计搭建页面 3000+
+              - button "×" [ref=e337] [cursor=pointer]
+            - generic [ref=e338]:
+              - button [ref=e339]:
+                - img [ref=e340]
+              - generic [ref=e347]:
+                - generic [ref=e348]:
+                  - textbox "项目名称" [ref=e350]: 前端监控与数据分析平台
+                  - generic [ref=e351]:
+                    - textbox [ref=e353] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2021-05-01
+                    - generic [ref=e354]: —
+                    - textbox [ref=e356] [cursor=pointer]:
+                      - /placeholder: 至今
+                      - text: 2022-01-01
+                - textbox "担任角色" [ref=e358]: 核心开发
+                - list [ref=e363]:
+                  - listitem [ref=e364]:
+                    - paragraph [ref=e365]: 开发轻量级前端监控 SDK（<10KB gzip），支持错误监控、性能采集、用户行为录制
+                  - listitem [ref=e366]:
+                    - paragraph [ref=e367]: 使用 ClickHouse + Grafana 搭建数据看板，实现秒级数据查询和告警
+                  - listitem [ref=e368]:
+                    - paragraph [ref=e369]: 平台接入内部 200+ 应用，日均处理 5000w+ 数据上报
+              - button "×" [ref=e370] [cursor=pointer]
+            - generic [ref=e371]:
+              - button [ref=e372]:
+                - img [ref=e373]
+              - generic [ref=e380]:
+                - generic [ref=e381]:
+                  - textbox "项目名称" [ref=e383]: 开源组件库 ZhiUI
+                  - generic [ref=e384]:
+                    - textbox [ref=e386] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2020-03-01
+                    - generic [ref=e387]: —
+                    - generic [ref=e388]:
+                      - textbox [ref=e389] [cursor=pointer]:
+                        - /placeholder: 至今
+                      - generic [ref=e390] [cursor=pointer]: 至今
+                - textbox "担任角色" [ref=e392]: 发起人 & 维护者
+                - list [ref=e397]:
+                  - listitem [ref=e398]:
+                    - paragraph [ref=e399]: 基于 Vue 3 + TypeScript 开发的企业级 UI 组件库，GitHub 2.8k stars
+                  - listitem [ref=e400]:
+                    - paragraph [ref=e401]: 完善的文档站（VitePress）、单测覆盖率 92%、支持 Tree-shaking 按需加载
+                  - listitem [ref=e402]:
+                    - paragraph [ref=e403]: 发布 npm 包，周下载量 5000+，被多个团队在生产环境使用
+              - button "×" [ref=e404] [cursor=pointer]
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - button "拖拽排序" [ref=e407]:
+              - img [ref=e408]
+            - heading "教育背景" [level=2] [ref=e415]:
+              - textbox "板块名称" [ref=e416]: 教育背景
+            - button "设计板块布局" [ref=e417] [cursor=pointer]:
+              - img [ref=e418]
+            - button "添加" [ref=e423] [cursor=pointer]:
+              - img [ref=e424]
+            - button "移除板块" [ref=e425] [cursor=pointer]:
+              - img [ref=e426]
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - button [ref=e431]:
+                - img [ref=e432]
+              - generic [ref=e439]:
+                - generic [ref=e440]:
+                  - textbox "学校名称" [ref=e442]: 浙江大学
+                  - generic [ref=e443]:
+                    - textbox [ref=e445] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2015-09-01
+                    - generic [ref=e446]: —
+                    - textbox [ref=e448] [cursor=pointer]:
+                      - /placeholder: 至今
+                      - text: 2017-06-01
+                - generic [ref=e449]:
+                  - textbox "学历" [ref=e450]: 硕士
+                  - generic [ref=e451]: /
+                  - textbox "专业" [ref=e452]: 计算机科学与技术
+              - button "×" [ref=e453] [cursor=pointer]
+            - generic [ref=e454]:
+              - button [ref=e455]:
+                - img [ref=e456]
+              - generic [ref=e463]:
+                - generic [ref=e464]:
+                  - textbox "学校名称" [ref=e466]: 华中科技大学
+                  - generic [ref=e467]:
+                    - textbox [ref=e469] [cursor=pointer]:
+                      - /placeholder: 开始
+                      - text: 2011-09-01
+                    - generic [ref=e470]: —
+                    - textbox [ref=e472] [cursor=pointer]:
+                      - /placeholder: 至今
+                      - text: 2015-06-01
+                - generic [ref=e473]:
+                  - textbox "学历" [ref=e474]: 学士
+                  - generic [ref=e475]: /
+                  - textbox "专业" [ref=e476]: 软件工程
+              - button "×" [ref=e477] [cursor=pointer]
+        - generic [ref=e478]:
+          - generic [ref=e479]:
+            - button "拖拽排序" [ref=e480]:
+              - img [ref=e481]
+            - heading "专业技能" [level=2] [ref=e488]:
+              - textbox "板块名称" [ref=e489]: 专业技能
+            - button "添加" [ref=e490] [cursor=pointer]:
+              - img [ref=e491]
+            - button "移除板块" [ref=e492] [cursor=pointer]:
+              - img [ref=e493]
+          - generic [ref=e496]:
+            - generic [ref=e497]:
+              - button [ref=e498]:
+                - img [ref=e499]
+              - textbox "技能" [ref=e504]: Vue 3 / React
+              - button "精通" [ref=e505] [cursor=pointer]
+              - button "×" [ref=e506] [cursor=pointer]
+            - generic [ref=e507]:
+              - button [ref=e508]:
+                - img [ref=e509]
+              - textbox "技能" [ref=e514]: TypeScript
+              - button "精通" [ref=e515] [cursor=pointer]
+              - button "×" [ref=e516] [cursor=pointer]
+            - generic [ref=e517]:
+              - button [ref=e518]:
+                - img [ref=e519]
+              - textbox "技能" [ref=e524]: Node.js / Koa
+              - button "熟练" [ref=e525] [cursor=pointer]
+              - button "×" [ref=e526] [cursor=pointer]
+            - generic [ref=e527]:
+              - button [ref=e528]:
+                - img [ref=e529]
+              - textbox "技能" [ref=e534]: Webpack / Vite
+              - button "精通" [ref=e535] [cursor=pointer]
+              - button "×" [ref=e536] [cursor=pointer]
+            - generic [ref=e537]:
+              - button [ref=e538]:
+                - img [ref=e539]
+              - textbox "技能" [ref=e544]: TailwindCSS / CSS3
+              - button "熟练" [ref=e545] [cursor=pointer]
+              - button "×" [ref=e546] [cursor=pointer]
+            - generic [ref=e547]:
+              - button [ref=e548]:
+                - img [ref=e549]
+              - textbox "技能" [ref=e554]: 前端工程化 / CI/CD
+              - button "熟练" [ref=e555] [cursor=pointer]
+              - button "×" [ref=e556] [cursor=pointer]
+            - generic [ref=e557]:
+              - button [ref=e558]:
+                - img [ref=e559]
+              - textbox "技能" [ref=e564]: 性能优化
+              - button "熟练" [ref=e565] [cursor=pointer]
+              - button "×" [ref=e566] [cursor=pointer]
+            - generic [ref=e567]:
+              - button [ref=e568]:
+                - img [ref=e569]
+              - textbox "技能" [ref=e574]: 微前端 / Monorepo
+              - button "熟练" [ref=e575] [cursor=pointer]
+              - button "×" [ref=e576] [cursor=pointer]
+      - button "+ 新增自定义板块" [ref=e579] [cursor=pointer]

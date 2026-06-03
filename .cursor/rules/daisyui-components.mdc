@@ -1,0 +1,62 @@
+---
+description: 强制使用 DaisyUI 组件，禁止自定义 UI 组件样式
+alwaysApply: true
+---
+
+# 必须使用 DaisyUI 组件
+
+所有 UI 组件必须使用 DaisyUI 提供的类名，禁止手写等效的自定义样式。
+
+## 规则
+
+1. **按钮** — 必须使用 `btn` 及其变体（`btn-primary`, `btn-ghost`, `btn-outline`, `btn-circle`, `btn-xs/sm/md/lg`）
+2. **输入框** — 必须使用 `input`, `textarea`, `select` 等 DaisyUI 表单类
+3. **卡片** — 必须使用 `card`, `card-body`, `card-title`
+4. **模态框** — 必须使用 `modal`, `modal-box`
+5. **下拉菜单** — 必须使用 `dropdown`, `dropdown-content`, `menu`
+6. **徽章** — 必须使用 `badge` 及变体
+7. **标签页** — 必须使用 `tabs`, `tab`
+8. **提示/警告** — 必须使用 `alert`, `tooltip`
+9. **导航** — 必须使用 `navbar`, `menu`, `breadcrumbs`
+10. **按钮组** — 必须使用 `join` + `join-item`
+
+## 禁止
+
+- ❌ 使用 Tailwind 原子类组合出按钮效果（如 `px-4 py-2 rounded bg-indigo-500 text-white`）
+- ❌ 在 `<style>` 中用 `@apply` 重新实现 DaisyUI 已有组件（如自定义 `.my-btn`）
+- ❌ 手写 hover/focus/active 状态覆盖 DaisyUI 默认行为
+
+## 允许的例外
+
+- 简历模板的**排版内容样式**（字体、行高、颜色等打印布局）
+- 拖拽状态样式（`.drag-ghost`, `.drag-chosen`）— DaisyUI 无等效组件
+- 拖拽/排序操作按钮（`.section-handle`, `.item-handle`, `.move-btn`）— 通过 `style.css` 统一管理
+- 编辑器工具类按钮（`.section-add-btn`, `.section-remove-btn`, `.item-delete-btn`, `.empty-add-btn`）— 在 `style.css` 中通过 `@apply btn` 实现 DaisyUI 合规
+- `type="color"` 原生取色器 — DaisyUI 无专用颜色选择器组件
+- 滚动条自定义样式
+
+## 示例
+
+```vue
+<!-- ❌ 错误 -->
+<button class="px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-xs">
+  + 添加
+</button>
+
+<!-- ✅ 正确 -->
+<button class="btn btn-outline btn-xs">+ 添加</button>
+```
+
+```vue
+<!-- ❌ 错误 -->
+<div class="relative">
+  <button @click="open = !open">选择</button>
+  <ul v-if="open" class="absolute mt-2 bg-white shadow rounded-lg p-2">...</ul>
+</div>
+
+<!-- ✅ 正确 -->
+<div class="dropdown">
+  <div tabindex="0" role="button" class="btn btn-sm">选择</div>
+  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow-sm">...</ul>
+</div>
+```
